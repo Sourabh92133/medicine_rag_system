@@ -87,7 +87,7 @@ Follow these steps to set up and run the project locally:
     ```bash
     jupyter notebook
     ```
-    Inside the Jupyter file browser, open `Medical_RAG.ipynb`.
+    Inside the Jupyter file browser, open `notebooks/Medical_RAG.ipynb`.
 
 5.  **Execute Cells:**
     Run all cells within the notebook sequentially. This process will:

@@ -46,7 +46,7 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash

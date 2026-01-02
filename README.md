@@ -1,7 +1,8 @@
 # Medical Conversational RAG System
 
-This project implements a **Conversational Retrieval-Augmented Generation (RAG)** system for medical product information using **LangChain**, **Groq LLMs**, and **vector databases**.  
-It supports multi-turn conversations, semantic search, vector visualization, and a Gradio-based user interface.
+This project implements a **Conversational Retrieval-Augmented Generation (RAG)** system for medical product information using **LangChain**, **Groq LLMs**, and **vector databases**.
+
+The system supports multi-turn conversations, semantic search, vector visualization, and a Gradio-based user interface.
 
 ---
 
@@ -9,7 +10,7 @@ It supports multi-turn conversations, semantic search, vector visualization, and
 
 The system ingests a CSV dataset of medical products, converts text into embeddings, stores them in vector databases, retrieves relevant context for user queries, and generates grounded responses using an LLM.
 
-### Key focus areas:
+### Key Focus Areas:
 - Retrieval-Augmented Generation (RAG)
 - Conversational memory
 - Vector database comparison (Chroma vs FAISS)
@@ -20,15 +21,15 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 
 ## Features
 
-- CSV-based document ingestion  
-- Text chunking with overlap  
-- Embeddings using HuggingFace MiniLM  
-- Vector storage with **ChromaDB** and **FAISS**  
-- Conversational memory for multi-turn Q&A  
-- Batch query execution (parallel queries)  
-- 2D & 3D vector visualization using **t-SNE**  
-- Interactive **Gradio** chat interface  
-- **Groq LLM** integration  
+- CSV-based document ingestion
+- Text chunking with overlap
+- Embeddings using HuggingFace MiniLM
+- Vector storage with **ChromaDB** and **FAISS**
+- Conversational memory for multi-turn Q&A
+- Batch query execution (parallel queries)
+- 2D & 3D vector visualization using **t-SNE**
+- Interactive **Gradio** chat interface
+- **Groq LLM** integration
 
 ---
 
@@ -43,6 +44,52 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 - **scikit-learn (t-SNE)**
 - **Plotly**
 - **Gradio**
+
+---
+
+## ⚙️ How to Run
+
+Follow these steps to set up and run the project locally:
+
+### Prerequisites
+
+*   **Python 3.8+** installed.
+*   A **Groq API Key** 
+
+### Step-by-Step Instructions
+
+1.  **Clone the repository:**
+    ```bash
+    git clone github.com
+    cd medicine_rag_system
+    ```
+
+2.  **Install required dependencies:**
+    *(Assuming you have a `requirements.txt` file in the root directory)*
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *If a `requirements.txt` is not present, you will need to install the packages listed in the Tech Stack section manually using `pip install <package_name>`.*
+
+3.  **Set your Groq API Key:**
+    For security, it is best to set your API key as an environment variable in your terminal session before starting the notebook:
+    ```bash
+    export GROQ_API_KEY="your_api_key_here"
+    ```
+
+4.  **Open and Run the Notebook:**
+    Launch Jupyter Notebook and navigate to the main implementation file:
+    ```bash
+    jupyter notebook
+    ```
+    Inside the Jupyter file browser, open `Medical_RAG.ipynb`.
+
+5.  **Execute Cells:**
+    Run all cells within the notebook sequentially. This process will:
+    *   Ingest the data from the `data/` directory.
+    *   Generate embeddings and store vectors in your chosen database (ChromaDB or FAISS).
+    *   Initialize the conversational retrieval chain.
+    *   Launch the **Gradio** user interface, which will provide a local URL to interact with the system.
 
 ---
 
@@ -77,4 +124,4 @@ This project demonstrates:
 - Vector database design and comparison
 - Evaluation and visualization of embedding spaces
 - Building conversational LLM systems with memory
-- End-to-end prototyping from data ingestion to UI  
+- End-to-end prototyping from data ingestion to UI

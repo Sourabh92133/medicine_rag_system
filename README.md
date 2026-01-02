@@ -47,7 +47,7 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 Follow these steps to set up and run the project locally:
 
@@ -94,7 +94,7 @@ Follow these steps to set up and run the project locally:
 
 ## Repository Notes
 
-- - The main notebook is located in the `notebooks/` directory:
+- The main notebook is located in the `notebooks/` directory:
   - `notebooks/Medical_RAG.ipynb`
 - The dataset used for ingestion is stored in the `data/` directory.
 - Output artifacts such as embedding visualizations and demo videos are stored in the `outputs/` directory.

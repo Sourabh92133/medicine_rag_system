@@ -46,6 +46,41 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 
 ---
 
+## ▶️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sourabh92133/medicine_rag_system.git
+   cd medicine_rag_system
+Install required dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+(If requirements.txt is not present, install packages listed in the Tech Stack section.)
+
+Open the main notebook:
+
+Navigate to notebooks/Medical_RAG.ipynb
+
+Run it locally using Jupyter Notebook or open it in Google Colab
+
+Run all cells to:
+
+Build embeddings
+
+Store vectors in ChromaDB / FAISS
+
+Enable conversational retrieval
+
+Launch the Gradio interface (if enabled)
+
+yaml
+Copy code
+
+
+---
+
 ## Repository Structure & Notes
 
 - The main implementation notebook is located in the `notebooks/` directory:

@@ -47,7 +47,7 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 
 ---
 
-## How to Run
+## ⚙️ How to Run
 
 Follow these steps to set up and run the project locally:
 
@@ -64,17 +64,22 @@ Follow these steps to set up and run the project locally:
     cd medicine_rag_system
     ```
 
-2.  **Install required dependencies:**
-    *(Assuming you have a `requirements.txt` file in the root directory)*
+2.  **Install required dependencies manually:**
+    Run the following command in your terminal to install all necessary libraries:
     ```bash
-    pip install -r requirements.txt
+    pip install langchain langchain-community langchain-groq langchain-huggingface \
+                chromadb faiss-cpu sentence-transformers pandas scikit-learn \
+                plotly gradio python-dotenv
     ```
-    *If a `requirements.txt` is not present, you will need to install the packages listed in the Tech Stack section manually using `pip install <package_name>`.*
 
 3.  **Set your Groq API Key:**
-    For security, it is best to set your API key as an environment variable in your terminal session before starting the notebook:
+    Set your API key as an environment variable in your terminal session before starting the notebook:
     ```bash
+    # For Linux or Mac:
     export GROQ_API_KEY="your_api_key_here"
+
+    # For Windows (Command Prompt):
+    set GROQ_API_KEY="your_api_key_here"
     ```
 
 4.  **Open and Run the Notebook:**
@@ -82,7 +87,8 @@ Follow these steps to set up and run the project locally:
     ```bash
     jupyter notebook
     ```
-    Inside the Jupyter file browser,  open `notebooks/Medical_RAG.ipynb`.
+    Inside the Jupyter file browser, open `Medical_RAG.ipynb`.
+
 5.  **Execute Cells:**
     Run all cells within the notebook sequentially. This process will:
     *   Ingest the data from the `data/` directory.
@@ -98,7 +104,6 @@ Follow these steps to set up and run the project locally:
   - `notebooks/Medical_RAG.ipynb`
 - The dataset used for ingestion is stored in the `data/` directory.
 - Output artifacts such as embedding visualizations and demo videos are stored in the `outputs/` directory.
-- Repository structure may be further refined as the project evolves.
 
 ---
 

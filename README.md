@@ -49,6 +49,7 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 ## Repository Notes
 
 - The main notebook (`Medical_RAG.ipynb`) is currently kept at the root level for easy access and review.
+- The dataset used for ingestion is stored in the `data/` directory.
 - Output artifacts such as embedding visualizations and demo videos are stored in the `outputs/` directory.
 - Repository structure may be further refined as the project evolves.
 

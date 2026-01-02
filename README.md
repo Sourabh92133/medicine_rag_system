@@ -46,43 +46,12 @@ The system ingests a CSV dataset of medical products, converts text into embeddi
 
 ---
 
-## How to Run
+## Repository Notes
 
-### 1️ Clone the repository
-```bash
-git clone https://github.com/Sourabh92133/medicine_rag_system.git
-cd medicine_rag_system
-
-### 2️ Install dependencies
-```bash
-pip install -r requirements.txt
-
-(If requirements.txt is not present, install packages listed in the Tech Stack section.)
-
-###  Open the main notebook
-
-Navigate to:
-```bash
-notebooks/Medical_RAG.ipynb
-
-###  Run all cells
-
-Running all cells will:
-- Build embeddings  
-- Store vectors in **ChromaDB** / **FAISS**  
-- Enable conversational retrieval  
-- Launch the **Gradio interface** (if enabled)
-
-
----
-
-## Repository Structure & Notes
-
-- The main implementation notebook is located in the `notebooks/` directory:
-  - `notebooks/Medical_RAG.ipynb`
+- The main notebook (`Medical_RAG.ipynb`) is currently kept at the root level for easy access and review.
 - The dataset used for ingestion is stored in the `data/` directory.
 - Output artifacts such as embedding visualizations and demo videos are stored in the `outputs/` directory.
-- The repository follows a modular structure for clarity and future extensibility.
+- Repository structure may be further refined as the project evolves.
 
 ---
 
@@ -108,4 +77,4 @@ This project demonstrates:
 - Vector database design and comparison
 - Evaluation and visualization of embedding spaces
 - Building conversational LLM systems with memory
-- End-to-end prototyping from data ingestion to UI
+- End-to-end prototyping from data ingestion to UI  

@@ -60,7 +60,7 @@ Follow these steps to set up and run the project locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone github.com
+    git clone https://github.com/Sourabh92133/medicine_rag_system.git
     cd medicine_rag_system
     ```
 
@@ -82,8 +82,7 @@ Follow these steps to set up and run the project locally:
     ```bash
     jupyter notebook
     ```
-    Inside the Jupyter file browser, open `Medical_RAG.ipynb`.
-
+    Inside the Jupyter file browser,  open `notebooks/Medical_RAG.ipynb`.
 5.  **Execute Cells:**
     Run all cells within the notebook sequentially. This process will:
     *   Ingest the data from the `data/` directory.
@@ -95,7 +94,8 @@ Follow these steps to set up and run the project locally:
 
 ## Repository Notes
 
-- The main notebook (`Medical_RAG.ipynb`) is currently kept at the root level for easy access and review.
+- - The main notebook is located in the `notebooks/` directory:
+  - `notebooks/Medical_RAG.ipynb`
 - The dataset used for ingestion is stored in the `data/` directory.
 - Output artifacts such as embedding visualizations and demo videos are stored in the `outputs/` directory.
 - Repository structure may be further refined as the project evolves.

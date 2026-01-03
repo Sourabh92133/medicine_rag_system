@@ -115,14 +115,28 @@ Follow these steps to set up and run the project locally:
 - The main notebook is located in the `notebooks/` directory:
   - `notebooks/Medical_RAG.ipynb`
 - The dataset used for ingestion is stored in the `data/` directory.
-- Output artifacts such as embedding visualizations and demo videos are stored in the `outputs/` directory.
+- Output artifacts such as embedding visualizations and UI screenshots are stored in the `outputs/images/` directory.
 
 ---
 
 ## Demo & Visualizations
 
-- Embedding visualizations (2D / 3D) are available in the `outputs/` directory.
-- A recorded demo showcasing conversational queries and retrieval behavior is also included.
+### Gradio Chat Interface
+Below is a snapshot of the interactive Gradio-based conversational interface used for querying the medical RAG system.
+
+![Gradio Output](outputs/images/gradio_output.png)
+
+### Embedding Space Visualizations
+
+**ChromaDB – 2D Embedding Visualization**
+![Chroma 2D](outputs/images/Chroma_db_vectors_visual_2d.png)
+
+**FAISS – 2D Embedding Visualization**
+![FAISS 2D](outputs/images/FAISS_vectors_visual_2d.png)
+
+**ChromaDB – 3D Embedding Visualization**
+![Chroma 3D](outputs/images/chromadb_vectors_visualization_3d.png)
+
 
 ---
 

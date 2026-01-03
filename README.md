@@ -10,7 +10,7 @@ The system supports multi-turn conversations, semantic search, vector visualizat
 **Watch the full project demo here:**  
 https://drive.google.com/file/d/1Ufvynfc0Rumnp1MUXDraArVRyxR_Ko_1/view?usp=sharing
 
-📌 The demo showcases:
+The demo showcases:
 - End-to-end RAG workflow
 - Conversational queries with memory
 - Vector retrieval behavior

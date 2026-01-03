@@ -6,6 +6,18 @@ The system supports multi-turn conversations, semantic search, vector visualizat
 
 ---
 
+##  Demo Video
+**Watch the full project demo here:**  
+https://drive.google.com/file/d/1Ufvynfc0Rumnp1MUXDraArVRyxR_Ko_1/view?usp=sharing
+
+📌 The demo showcases:
+- End-to-end RAG workflow
+- Conversational queries with memory
+- Vector retrieval behavior
+- Gradio-based chat interface
+
+---
+
 ## Project Overview
 
 The system ingests a CSV dataset of medical products, converts text into embeddings, stores them in vector databases, retrieves relevant context for user queries, and generates grounded responses using an LLM.
